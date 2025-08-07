@@ -1,1 +1,2 @@
-lsb_release -i | cut -f2
+#!/bin/bash
+cut -d= -f2 /etc/os-release | head -n1
